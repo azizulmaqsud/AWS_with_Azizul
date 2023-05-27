@@ -15,5 +15,13 @@ Please feel free to submit a pull request if you have an AWS project that you wo
 
 - The project is well-structured and simple to comprehend.
 
+# Please be connected with me at following
+ 
+- https://www.youtube.com/channel/UCNwP7KEElaJ7cdDTLP-KbBg
+- https://www.linkedin.com/in/azizul-maqsud/
+- https://azizulmaqsud-1684501031000.hashnode.dev/
+- https://twitter.com/Sohail2me
+
+
 
 # AWS_with_Azizul
