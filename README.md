@@ -1,21 +1,19 @@
-# AWS Projects Repository
+# AWS Projects 
 
-Welcome to my AWS Projects Repository! In this repository, I will be sharing a collection of projects that showcase the different AWS services and their capabilities. Each project will be a separate folder in the repository and contain all the necessary files, including code, configuration files, and documentation.
+Thanks for visiting my AWS Projects Repository! I'll be releasing a number of projects in this repository that highlight the various AWS services and their features. Every project will have its own folder in the repository with all the required files, such as configuration files, code, and documentation.
 
-# Getting Started
+# How to Get Started
 
-To get started with these projects, you will need an AWS account and some basic knowledge of AWS services. Each project folder contains detailed instructions on how to set up the project and deploy it to AWS.
+You will require an AWS account and a fundamental understanding of AWS services in order to begin working on these projects. Each project folder includes comprehensive setup and AWS deployment instructions.
 
 # Contributing
 
-If you have an AWS project that you would like to share, feel free to [contribute](CONTRIBUTING.md) to this repository by creating a pull request. Please make sure that your project meets the following criteria:
+Please feel free to submit a pull request if you have an AWS project that you would want to share. Please make sure your project complies with the following requirements:
 
-- The project showcases a specific AWS service or feature
-- The project includes clear documentation on how to set up and run the project
-- The project is well-organized and easy to understand
+- One or more AWS services or features are highlighted in the project.
+- The project has detailed instructions for setting up and managing the project.
 
-# License
+- The project is well-structured and simple to comprehend.
 
-This repository is licensed under the MIT License. See the LICENSE file for details.
 
 # AWS_with_Azizul

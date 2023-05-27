@@ -6,12 +6,12 @@
   
   h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   
   form {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   
   input[type="text"] {

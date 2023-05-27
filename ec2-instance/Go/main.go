@@ -13,7 +13,7 @@ import (
 
 func main() {
 	session, err := session.NewSession(&aws.Config{
-		Region: aws.String("ap-south-1"),
+		Region: aws.String("us-east-2"),
 	})
 
 	if err != nil {
@@ -43,7 +43,7 @@ func main() {
 
 func createEC2Instance(serviceClient *ec2.EC2) (string, error) {
 	parameters := &ec2.RunInstancesInput{
-		ImageId:      aws.String("ami-05f96ebf267205daa"),
+		ImageId:      aws.String("ami-1223456"),
 		InstanceType: aws.String("t2.micro"),
 		MinCount:     aws.Int64(1),
 		MaxCount:     aws.Int64(1),
