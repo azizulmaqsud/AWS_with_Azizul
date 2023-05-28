@@ -1,4 +1,4 @@
-# AWS Projects 
+# my AWS Projects 
 
 Thanks for visiting my AWS Projects Repository! I'll be releasing a number of projects in this repository that highlight the various AWS services and their features. Every project will have its own folder in the repository with all the required files, such as configuration files, code, and documentation.
 
