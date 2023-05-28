@@ -21,6 +21,7 @@ Please feel free to submit a pull request if you have an AWS project that you wo
 - https://www.linkedin.com/in/azizul-maqsud/
 - https://azizulmaqsud-1684501031000.hashnode.dev/
 - https://twitter.com/Sohail2me
+- https://www.buymeacoffee.com/azizulmaqsud
 
 
 
