@@ -1,5 +1,6 @@
 # Creating AWS S3 bucket (Public access On/Off) with Terraform
-main.tf (Terraform Configuration File) 
+
+# main.tf (Terraform Configuration File) 
 
 
 terraform {
