@@ -1,5 +1,6 @@
 # Creating AWS S3 bucket (Public access On/Off) with Terraform
-- Terraform Configuration File main.tf
+main.tf (Terraform Configuration File) 
+
 
 terraform {
   required_providers {
@@ -55,11 +56,11 @@ resource "aws_s3_bucket" "s3_bucket" {
   bucket = "azizuls-bucket"
 }
 #	Login AWS
-  Open Cloud Shell
-  Install Terraform https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
-  Upload the main.tf file to the Cloud Shell
-  Terraform Init, plan and apply to create the S3
-  Add another configuration to stop public access on S3
+  - Open Cloud Shell
+  - Install Terraform https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
+  - Upload the main.tf file to the Cloud Shell
+  - Terraform Init, plan and apply to create the S3
+  - Add another configuration to stop public access on S3
 
 resource "aws_s3_bucket_public_access_block" "s3_block" {
 bucket = aws_s3_bucket.s3_bucket.id
@@ -75,7 +76,7 @@ restrict_public_buckets = true
 - If the AWS Cloud Shell CLI session expires, then run a new AWS CLI to refresh it. Example: aws s3 ls s3://azizuls-bucket
 
 
-# Let be connected with me at following
+# Let's be connected with me at following links
  
 - https://www.youtube.com/channel/UCNwP7KEElaJ7cdDTLP-KbBg
 - https://www.linkedin.com/in/azizul-maqsud/
@@ -85,4 +86,4 @@ restrict_public_buckets = true
 
 
 
-# AWS_with_Azizul
+# Learn_with_Azizul
