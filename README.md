@@ -55,11 +55,11 @@ resource "aws_s3_bucket" "s3_bucket" {
   bucket = "azizuls-bucket"
 }
 #	Login AWS
-#	Open Cloud Shell
-#	Install Terraform https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
-#	Upload the main.tf file to the Cloud Shell
-#	Terraform Init, plan and apply to create the S3
-#	Add another configuration to stop public access on S3
+  Open Cloud Shell
+  Install Terraform https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
+  Upload the main.tf file to the Cloud Shell
+  Terraform Init, plan and apply to create the S3
+  Add another configuration to stop public access on S3
 
 resource "aws_s3_bucket_public_access_block" "s3_block" {
 bucket = aws_s3_bucket.s3_bucket.id
