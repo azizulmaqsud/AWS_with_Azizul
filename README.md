@@ -1,5 +1,5 @@
 # Creating AWS S3 bucket (Public access On/Off) with Terraform
-# Terraform Configuration File (main.tf)
+- Terraform Configuration File main.tf
 
 terraform {
   required_providers {
