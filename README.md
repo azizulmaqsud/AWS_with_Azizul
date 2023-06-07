@@ -1,21 +1,81 @@
-# AWS Projects 
+# Creating AWS S3 bucket (Public access On/Off) with Terraform
+# Terraform Configuration File (main.tf)
 
-Thanks for visiting my AWS Projects Repository! I'll be releasing a number of projects in this repository that highlight the various AWS services and their features. Every project will have its own folder in the repository with all the required files, such as configuration files, code, and documentation.
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
 
-# How to Get Started
+  required_version = ">= 1.2.0"
+}
 
-You will require an AWS account and a fundamental understanding of AWS services in order to begin working on these projects. Each project folder includes comprehensive setup and AWS deployment instructions.
+provider "aws" {
+  region  = "us-east-1"
+}
 
-# Contributing
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = "azizuls-bucket"
+}
 
-Please feel free to submit a pull request if you have an AWS project that you would want to share. Please make sure your project complies with the following requirements:
+resource "aws_s3_bucket_public_access_block" "s3_block" {
+  bucket = aws_s3_bucket.s3_bucket.id
 
-- One or more AWS services or features are highlighted in the project.
-- The project has detailed instructions for setting up and managing the project.
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
 
-- The project is well-structured and simple to comprehend.
+# Steps
+- Create folder named aws-s3-tf
+- Create folder named terraform-aws
+- Open the aws-s3-tf folder on VS Code
+- Create the file main.tf
+- Create the configuration to deploy an S3 bucket
 
-# Please be connected with me at following
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  region  = "us-east-1"
+}
+
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = "azizuls-bucket"
+}
+#	Login AWS
+#	Open Cloud Shell
+#	Install Terraform https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started
+#	Upload the main.tf file to the Cloud Shell
+#	Terraform Init, plan and apply to create the S3
+#	Add another configuration to stop public access on S3
+
+resource "aws_s3_bucket_public_access_block" "s3_block" {
+bucket = aws_s3_bucket.s3_bucket.id
+
+block_public_acls       = true
+block_public_policy     = true
+ignore_public_acls      = true
+restrict_public_buckets = true
+}
+
+
+# Troubleshooting
+- If the AWS Cloud Shell CLI session expires, then run a new AWS CLI to refresh it. Example: aws s3 ls s3://azizuls-bucket
+
+
+# Let be connected with me at following
  
 - https://www.youtube.com/channel/UCNwP7KEElaJ7cdDTLP-KbBg
 - https://www.linkedin.com/in/azizul-maqsud/
