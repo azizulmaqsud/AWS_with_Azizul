@@ -2,7 +2,6 @@
 
 # main.tf (Terraform Configuration File) 
 
-
 terraform {
   required_providers {
     aws = {
